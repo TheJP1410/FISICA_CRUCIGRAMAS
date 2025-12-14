@@ -3,6 +3,7 @@ import { generateCrossword } from './services/geminiService';
 import { Topic, CrosswordData, CellData } from './types';
 import { Grid } from './components/Grid';
 import { ArrowLeft, CheckCircle, RefreshCw, AlertCircle, Loader2 } from 'lucide-react';
+import { Analytics } from "@vercel/analytics/react";
 
 const TOPICS: Topic[] = [
   'TERMODINÁMICA',
@@ -289,6 +290,7 @@ const App: React.FC = () => {
           <p className="mt-2 text-slate-600">&copy; {new Date().getFullYear()} Física Crucigramas.</p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 };
