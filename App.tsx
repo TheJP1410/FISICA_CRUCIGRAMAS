@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { generateCrossword } from './services/geminiService';
 import { Topic, CrosswordData, CellData } from './types';
 import { Grid } from './components/Grid';
